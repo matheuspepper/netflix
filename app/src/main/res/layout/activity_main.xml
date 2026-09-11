@@ -5,15 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">git init
+    tools:context=".MainActivity"><![CDATA[
+
+    />
+
+    ]]>
 
     <ImageView
         android:id="@+id/imageCapa"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="317dp"
+        android:alpha="0.9"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo"
-        tools:layout_editor_absoluteX="27dp" />
+        app:srcCompat="@drawable/fundo" />
 
     <TextView
         android:id="@+id/textViewSerie"
@@ -194,6 +201,53 @@
         app:layout_constraintBottom_toBottomOf="@id/btAssistir"
         tools:layout_editor_absoluteY="196dp" />
 
+    <TextView
+        android:id="@+id/textViewLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Lançamento"
+        android:textColor="@color/menu_nave"
+        app:layout_constraintStart_toStartOf="@+id/LinhaGuiaEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/btAssistir" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/LinhaGuiaEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLancamento"
+        app:srcCompat="@drawable/f1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:srcCompat="@drawable/f2"
+        tools:layout_editor_absoluteX="162dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@id/LinhaGuiaDireita"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/f3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matheus Duarte Pimenta"
+        android:textColor="@color/menu_nave"
+        app:layout_constraintEnd_toStartOf="@+id/LinhaGuiaDireita"
+        app:layout_constraintStart_toStartOf="@+id/LinhaGuiaEsquerda" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
