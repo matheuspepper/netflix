@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Netflix</string>
+    <string name="s_rie">Serie</string>
+    <string name="filmes">Movies</string>
+    <string name="minha_lista">My List</string>
+    <string name="drama">Drama</string>
+    <string name="fic_o">Ficcion</string>
+    <string name="romance">Romance</string>
+    <string name="assistir">Watch</string>
+    <string name="minha_listaadd">MY LIST</string>
+    <string name="detalhes">DETAILS</string>
+    <string name="lan_amento">RELEASES</string>
+</resources>
